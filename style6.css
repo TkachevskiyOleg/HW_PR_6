@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    height: 300px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#progressBar {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ccc;
+    position: relative;
+    border-radius: 5px;
+}
+
+#filler {
+    height: 100%;
+    background-color: #007965;
+    width: 0;
+    position: absolute;
+
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

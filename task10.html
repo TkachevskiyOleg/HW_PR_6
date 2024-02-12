@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style10.css">
+</head>
+
+<body>
+
+    <ul id="mainMenu">
+        <li><a href="#">1</a>
+            <ul class="submenu">
+                <li><a href="">1.1</a></li>
+                <li><a href="">1.2</a></li>
+            </ul>
+        </li>
+        <li><a href="#">2</a>
+            <ul class="submenu">
+                <li><a href="">2.1</a></li>
+                <li><a href="">2.2</a></li>
+            </ul>
+        </li>
+    </ul>
+        <a href="task1.html">1</a>
+        <a href="task3.html">3</a>
+        <a href="task4.html">4</a>
+        <a href="task5.html">5</a>
+        <a href="task6.html">6</a>
+        <a href="task7.html">7</a>
+        <a href="task8.html">8</a>
+        <a href="task9.html">9</a>
+        <a href="task10.html">10</a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let mainMenuItems = document.querySelectorAll('#mainMenu > li');
+
+            mainMenuItems.forEach(function (item) {
+                item.addEventListener('mouseover', function () {
+                    let submenu = this.querySelector('.submenu');
+                    submenu.style.display = 'block';
+                });
+
+                item.addEventListener('mouseout', function () {
+                    let submenu = this.querySelector('.submenu');
+                    submenu.style.display = 'none';
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

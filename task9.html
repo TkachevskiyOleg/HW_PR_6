@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style9.css">
+</head>
+
+<body>
+
+    <button id="likeButton" onclick="increaseLikes()">👍 Like</button>
+        <a href="task1.html">1</a>
+        <a href="task3.html">3</a>
+        <a href="task4.html">4</a>
+        <a href="task5.html">5</a>
+        <a href="task6.html">6</a>
+        <a href="task7.html">7</a>
+        <a href="task8.html">8</a>
+        <a href="task9.html">9</a>
+        <a href="task10.html">10</a>
+    <script>
+        let likeCount = 0;
+
+        function increaseLikes() {
+            likeCount++;
+            document.getElementById('likeButton').innerHTML = `👍 Like ${likeCount}`;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+#mainMenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+#mainMenu>li {
+    display: inline-block;
+    position: relative;
+    background-color: aqua;
+    width: 6%;
+}
+
+#mainMenu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    background-color: aquamarine;
+}
+
+.submenu li {
+    margin: 5px 0;
+}
